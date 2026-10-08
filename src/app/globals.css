@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-sora: "Sora", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html, body {
+  background:
+    radial-gradient(900px 500px at 82% -8%, rgba(109,139,255,.10), transparent 60%),
+    #080b12;
+  color: #e7ecf7;
+  color-scheme: dark;
+}
+
+@layer components {
+  .card { @apply rounded-2xl border border-line/70 bg-surface; }
+  .btn { @apply inline-flex items-center gap-2 rounded-lg border border-line bg-surface2 px-4 py-2 text-sm font-medium transition hover:border-brand/50; }
+  .btn-primary { @apply border-transparent bg-brand text-[#0a1024] hover:brightness-110; }
+  .pill { @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold; }
+  .sev-critical { @apply text-sev-critical bg-sev-critical/15; }
+  .sev-high { @apply text-sev-high bg-sev-high/15; }
+  .sev-medium { @apply text-sev-medium bg-sev-medium/15; }
+  .sev-low { @apply text-sev-low bg-sev-low/15; }
+}
