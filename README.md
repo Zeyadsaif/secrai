@@ -1,4 +1,4 @@
-# Secrai
+# Secrai 
 
 **AI-powered cybersecurity risk management with live Microsoft Defender & Entra sync.**
 
